@@ -4,7 +4,6 @@ function changeDateFormat(array $dates) : array
 {
     $valid_dates = [];
     foreach($dates as $d) {
-        //echo $d . ' ' . strlen($d) . ' ' . str_replace('/','', $d) . '<br/>';
         if (strlen($d)!=10) continue;
         if (strlen(str_replace('/','',$d))==8) {
             $parts  = explode('/', $d);
